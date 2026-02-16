@@ -141,7 +141,7 @@ AWS_REGION=us-east-1
 AWS_ACCESS_KEY_ID=your_actual_key
 AWS_SECRET_ACCESS_KEY=your_actual_secret
 KNOWLEDGE_BASE_ID=your_kb_id
-MODEL_ARN=arn:aws:bedrock:us-east-1::foundation-model/amazon.nova-pro-v1:0
+MODEL_ARN=arn:aws:bedrock:us-east-1::yourmodelhere
 ```
 
 **Step 3: Run the Analysis**
