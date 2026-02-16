@@ -257,7 +257,7 @@ AWS_SECRET_ACCESS_KEY=your_secret
 
 # Bedrock Knowledge Base
 KNOWLEDGE_BASE_ID=your_kb_id
-MODEL_ARN=arn:aws:bedrock:us-east-1::foundation-model/amazon.nova-pro-v1:0
+MODEL_ARN=arn:aws:bedrock:us-east-1::foundation-model/whicheveryouwant
 ```
 
 ### Bedrock Knowledge Base Setup
@@ -298,10 +298,6 @@ HOSP002,Riverside General,Amoxicillin,500,0.45,225.00,2025-01-10,PharmaCorp
 - `pydantic` - Data validation
 - `pandas` - Data processing
 
-**Development:**
-- `pytest` - Testing
-- `black` - Code formatting
-- `ruff` - Linting
 
 Install all: `poetry install`
 
@@ -350,55 +346,3 @@ Warning: No purchase order data to analyze
 - **Analysis Speed:** CSV parsing and analysis completes in <1 second for 100+ purchases
 - **Scalability:** Supports unlimited hospital and purchase record analysis
 
-## 📝 Output Examples
-
-### High-Risk Hospital (Off-Contract)
-```
-hospital_id: HOSP001
-hospital_name: St. Mary Medical Center
-quarterly_spend: $45,000.00
-alignment_status: MISALIGNED
-risk_level: HIGH
-issues: Off-contract drug purchased: Ciprofloxacin; Quarterly spend below minimum
-```
-
-### Medium-Risk Hospital (Below Minimum)
-```
-hospital_id: HOSP003
-hospital_name: Community Health Hospital
-quarterly_spend: $48,500.00
-alignment_status: MISALIGNED
-risk_level: MEDIUM
-issues: Quarterly spend ($48,500.00) below minimum ($50,000.00)
-```
-
-## 🔐 Security
-
-- AWS credentials stored in `.env` (gitignored)
-- No sensitive data in logs
-- Knowledge Base access controlled via IAM policies
-- CSV output saved locally only
-
-## 📄 License
-
-[Your License Here]
-
-## 👤 Author
-
-Purchasing Alignment Monitor Team
-
-## 🤝 Contributing
-
-Contributions welcome! Please:
-1. Fork the repository
-2. Create a feature branch
-3. Submit a pull request
-
-## 📞 Support
-
-For issues or questions, contact: [your-email@example.com]
-
----
-
-**Last Updated:** February 2025
-**Version:** 0.1.0
