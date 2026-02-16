@@ -1,0 +1,65 @@
+================================================================================
+PURCHASING ALIGNMENT MONITOR - ANALYSIS REPORT
+================================================================================
+
+Report Generated: 2026-02-16 12:32:39 UTC
+
+SUMMARY
+--------------------------------------------------------------------------------
+Total Hospitals Analyzed: 5
+Misaligned Hospitals: 5
+Alignment Rate: 0.0%
+
+MISALIGNED HOSPITALS (HIGH RISK)
+--------------------------------------------------------------------------------
+
+🔴 City Medical Center (ID: H001)
+   Risk Level: HIGH
+   Quarterly Spend: $87,500.00
+   Status: MISALIGNED
+   Issues:
+     • Off-contract drug purchased: Drug A
+     • Off-contract drug purchased: Drug B
+     • Off-contract drug purchased: Drug C
+
+🔴 Valley Health (ID: H002)
+   Risk Level: HIGH
+   Quarterly Spend: $62,600.00
+   Status: MISALIGNED
+   Issues:
+     • Off-contract drug purchased: Drug A
+     • Off-contract drug purchased: Drug X
+     • Off-contract drug purchased: Drug B
+
+🔴 Riverside Hospital (ID: H003)
+   Risk Level: HIGH
+   Quarterly Spend: $224,800.00
+   Status: MISALIGNED
+   Issues:
+     • Off-contract drug purchased: Drug A
+     • Off-contract drug purchased: Drug Z
+     • Off-contract drug purchased: Drug B
+     • Off-contract drug purchased: Drug A
+     • Off-contract drug purchased: Drug B
+     • Off-contract drug purchased: Drug C
+
+🔴 Lakeside Clinic (ID: H004)
+   Risk Level: HIGH
+   Quarterly Spend: $11,750.00
+   Status: MISALIGNED
+   Issues:
+     • Off-contract drug purchased: Drug A
+     • Off-contract drug purchased: Drug B
+     • Off-contract drug purchased: Drug C
+     • Quarterly spend ($11,750.00) below minimum ($50,000.00)
+
+🔴 Mountain View Health (ID: H005)
+   Risk Level: HIGH
+   Quarterly Spend: $59,000.00
+   Status: MISALIGNED
+   Issues:
+     • Off-contract drug purchased: Drug A
+     • Off-contract drug purchased: Drug Z
+     • Off-contract drug purchased: Drug B
+
+================================================================================

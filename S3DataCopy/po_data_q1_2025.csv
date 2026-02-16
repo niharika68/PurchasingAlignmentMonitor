@@ -1,0 +1,20 @@
+hospital_id,hospital_name,vendor_name,drug_name,ndc,quantity,unit_price,order_date,contract_tier_applied
+H001,City Medical Center,PharmaCorp,Drug A,11111-111,12000,2.50,2025-01-10,Tier1
+H001,City Medical Center,PharmaCorp,Drug B,11111-112,8000,2.50,2025-02-05,Tier1
+H001,City Medical Center,PharmaCorp,Drug C,11111-113,15000,2.50,2025-03-12,Tier1
+
+H002,Valley Health,PharmaCorp,Drug A,11111-111,5000,3.20,2025-01-15,Tier1
+H002,Valley Health,PharmaCorp,Drug X,99999-999,7000,4.00,2025-02-20,Tier1
+H002,Valley Health,PharmaCorp,Drug B,11111-112,6000,3.10,2025-03-01,Tier1
+
+H003,Riverside Hospital,PharmaCorp,Drug A,11111-111,20000,2.10,2025-01-22,Tier2
+H003,Riverside Hospital,PharmaCorp,Drug B,11111-112,18000,2.10,2025-02-11,Tier2
+H003,Riverside Hospital,PharmaCorp,Drug C,11111-113,22000,2.10,2025-03-09,Tier2
+
+H004,Lakeside Clinic,PharmaCorp,Drug A,11111-111,2000,2.50,2025-01-05,Tier1
+H004,Lakeside Clinic,PharmaCorp,Drug B,11111-112,1500,2.50,2025-02-14,Tier1
+H004,Lakeside Clinic,PharmaCorp,Drug C,11111-113,1200,2.50,2025-03-19,Tier1
+
+H005,Mountain View Health,PharmaCorp,Drug A,11111-111,9000,2.50,2025-01-17,Tier1
+H005,Mountain View Health,PharmaCorp,Drug Z,88888-888,5000,3.80,2025-02-10,Tier1
+H005,Mountain View Health,PharmaCorp,Drug B,11111-112,7000,2.50,2025-03-25,Tier1

@@ -1,0 +1,211 @@
+<svg viewBox="0 0 1400 1600" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .title { font-size: 32px; font-weight: bold; fill: #0f172a; }
+      .section-label { font-size: 16px; font-weight: 700; fill: #1e40af; letter-spacing: 1.2px; }
+      .box-title { font-size: 15px; font-weight: 600; fill: #ffffff; }
+      .box-desc { font-size: 11px; fill: #ffffff; opacity: 0.95; }
+      .label-text { font-size: 12px; fill: #334155; font-weight: 500; }
+      .small-text { font-size: 10px; fill: #64748b; }
+      
+      .aws-box { fill: #FF9900; }
+      .storage-box { fill: #569A31; }
+      .process-box { fill: #7C3AED; }
+      .output-box { fill: #059669; }
+      .data-box { fill: #DC2626; }
+      
+      .arrow { stroke: #94a3b8; stroke-width: 2.5; fill: none; marker-end: url(#arrowhead-gray); }
+      .arrow-main { stroke: #3b82f6; stroke-width: 3; fill: none; marker-end: url(#arrowhead-blue); }
+      .arrow-data { stroke: #ef4444; stroke-width: 2.5; fill: none; marker-end: url(#arrowhead-red); stroke-dasharray: 5,5; }
+    </style>
+    
+    <marker id="arrowhead-gray" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#94a3b8" />
+    </marker>
+    <marker id="arrowhead-blue" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#3b82f6" />
+    </marker>
+    <marker id="arrowhead-red" markerWidth="10" markerHeight="10" refX="9" refY="3" orient="auto">
+      <polygon points="0 0, 10 3, 0 6" fill="#ef4444" />
+    </marker>
+    
+    <filter id="shadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="3" stdDeviation="4" flood-opacity="0.2"/>
+    </filter>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1400" height="1600" fill="#f1f5f9"/>
+
+  <!-- Title -->
+  <text x="700" y="45" class="title" text-anchor="middle">Purchasing Alignment Monitor - Complete Architecture</text>
+  <text x="700" y="70" class="label-text" text-anchor="middle">AWS Bedrock RAG &amp; LangGraph Workflow</text>
+
+  <!-- ============ LAYER 1: AWS INFRASTRUCTURE ============ -->
+  <text x="50" y="120" class="section-label">LAYER 1: AWS INFRASTRUCTURE AND RAG</text>
+
+  <rect x="80" y="150" width="240" height="140" rx="10" class="storage-box" filter="url(#shadow)"/>
+  <text x="200" y="180" class="box-title" text-anchor="middle" style="font-size: 14px;">Amazon S3</text>
+  <text x="200" y="205" class="box-desc" text-anchor="middle" style="font-size: 10px;">Vector Database</text>
+  <rect x="100" y="225" width="200" height="50" fill="rgba(255,255,255,0.2)" rx="6"/>
+  <text x="200" y="240" class="box-desc" text-anchor="middle" style="font-size: 9px;">Embeddings &amp; Documents</text>
+  <text x="200" y="255" class="box-desc" text-anchor="middle" style="font-size: 9px;">Indexed for fast retrieval</text>
+
+  <rect x="400" y="150" width="240" height="140" rx="10" class="aws-box" filter="url(#shadow)"/>
+  <text x="520" y="180" class="box-title" text-anchor="middle" style="font-size: 14px;">Bedrock KB</text>
+  <text x="520" y="205" class="box-desc" text-anchor="middle" style="font-size: 10px;">Knowledge Base</text>
+  <rect x="420" y="225" width="200" height="50" fill="rgba(255,255,255,0.2)" rx="6"/>
+  <text x="520" y="240" class="box-desc" text-anchor="middle" style="font-size: 9px;">RAG Orchestration</text>
+  <text x="520" y="255" class="box-desc" text-anchor="middle" style="font-size: 9px;">Retrieval + Generation</text>
+
+  <rect x="720" y="150" width="240" height="140" rx="10" class="aws-box" filter="url(#shadow)"/>
+  <text x="840" y="180" class="box-title" text-anchor="middle" style="font-size: 14px;">Bedrock LLM</text>
+  <text x="840" y="205" class="box-desc" text-anchor="middle" style="font-size: 10px;">Amazon Nova Pro</text>
+  <rect x="740" y="225" width="200" height="50" fill="rgba(255,255,255,0.2)" rx="6"/>
+  <text x="840" y="240" class="box-desc" text-anchor="middle" style="font-size: 9px;">Text Generation</text>
+  <text x="840" y="255" class="box-desc" text-anchor="middle" style="font-size: 9px;">Context-aware responses</text>
+
+  <rect x="1040" y="150" width="240" height="140" rx="10" class="aws-box" filter="url(#shadow)"/>
+  <text x="1160" y="180" class="box-title" text-anchor="middle" style="font-size: 14px;">Agent Runtime</text>
+  <text x="1160" y="205" class="box-desc" text-anchor="middle" style="font-size: 10px;">Bedrock Agent Runtime</text>
+  <rect x="1060" y="225" width="200" height="50" fill="rgba(255,255,255,0.2)" rx="6"/>
+  <text x="1160" y="240" class="box-desc" text-anchor="middle" style="font-size: 9px;">Orchestrates KB + LLM</text>
+  <text x="1160" y="255" class="box-desc" text-anchor="middle" style="font-size: 9px;">API calls</text>
+
+  <!-- Arrows between AWS components -->
+  <path d="M 320 220 L 400 220" class="arrow"/>
+  <path d="M 640 220 L 720 220" class="arrow"/>
+  <path d="M 960 220 L 1040 220" class="arrow"/>
+
+  <!-- ============ LAYER 2: KNOWLEDGE BASE CONTENT ============ -->
+  <text x="50" y="350" class="section-label">LAYER 2: RAG KNOWLEDGE BASE CONTENT</text>
+
+  <rect x="80" y="380" width="300" height="140" rx="10" class="data-box" filter="url(#shadow)"/>
+  <text x="230" y="410" class="box-title" text-anchor="middle" style="font-size: 14px;">Contract Rules</text>
+  <rect x="100" y="430" width="260" height="70" fill="rgba(255,255,255,0.15)" rx="6"/>
+  <text x="230" y="445" class="box-desc" text-anchor="middle" style="font-size: 10px;">Contracted Drug Lists</text>
+  <text x="230" y="462" class="box-desc" text-anchor="middle" style="font-size: 10px;">Pricing Tiers and Thresholds</text>
+  <text x="230" y="479" class="box-desc" text-anchor="middle" style="font-size: 10px;">Hospital Classifications</text>
+  <text x="230" y="496" class="box-desc" text-anchor="middle" style="font-size: 10px;">Minimum Commitments</text>
+
+  <rect x="480" y="380" width="300" height="140" rx="10" class="data-box" filter="url(#shadow)"/>
+  <text x="630" y="410" class="box-title" text-anchor="middle" style="font-size: 14px;">Purchase Orders</text>
+  <rect x="500" y="430" width="260" height="70" fill="rgba(255,255,255,0.15)" rx="6"/>
+  <text x="630" y="445" class="box-desc" text-anchor="middle" style="font-size: 10px;">Hospital IDs and Names</text>
+  <text x="630" y="462" class="box-desc" text-anchor="middle" style="font-size: 10px;">Drug Names and Quantities</text>
+  <text x="630" y="479" class="box-desc" text-anchor="middle" style="font-size: 10px;">Unit Prices and Totals</text>
+  <text x="630" y="496" class="box-desc" text-anchor="middle" style="font-size: 10px;">Dates and Vendors</text>
+
+  <!-- All stored in S3/KB -->
+  <text x="700" y="560" class="small-text" text-anchor="middle">All documents are indexed and stored in S3 with vector embeddings for semantic search</text>
+  <path d="M 230 380 L 200 290" class="arrow-data" stroke-width="2"/>
+  <path d="M 630 380 L 520 290" class="arrow-data" stroke-width="2"/>
+
+  <!-- ============ LAYER 3: LANGGRAPH WORKFLOW ============ -->
+  <text x="50" y="620" class="section-label">LAYER 3: LANGGRAPH WORKFLOW (Agent Steps)</text>
+
+  <!-- Step 1: Retrieve Contract Rules -->
+  <rect x="80" y="660" width="260" height="110" rx="10" class="process-box" filter="url(#shadow)"/>
+  <text x="210" y="690" class="box-title" text-anchor="middle" style="font-size: 13px;">Step 1: Retrieve Contract Rules</text>
+  <rect x="100" y="710" width="220" height="50" fill="rgba(255,255,255,0.15)" rx="6"/>
+  <text x="210" y="725" class="box-desc" text-anchor="middle" style="font-size: 9px;">Query: What vendor contracts</text>
+  <text x="210" y="740" class="box-desc" text-anchor="middle" style="font-size: 9px;">rules apply?</text>
+
+  <!-- Step 2: Retrieve PO Data -->
+  <rect x="400" y="660" width="260" height="110" rx="10" class="process-box" filter="url(#shadow)"/>
+  <text x="530" y="690" class="box-title" text-anchor="middle" style="font-size: 13px;">Step 2: Retrieve PO Data</text>
+  <rect x="420" y="710" width="220" height="50" fill="rgba(255,255,255,0.15)" rx="6"/>
+  <text x="530" y="725" class="box-desc" text-anchor="middle" style="font-size: 9px;">Query: Get all quarterly</text>
+  <text x="530" y="740" class="box-desc" text-anchor="middle" style="font-size: 9px;">purchase orders</text>
+
+  <!-- Step 3: Parse and Aggregate -->
+  <rect x="720" y="660" width="260" height="110" rx="10" class="process-box" filter="url(#shadow)"/>
+  <text x="850" y="690" class="box-title" text-anchor="middle" style="font-size: 13px;">Step 3: Parse and Aggregate</text>
+  <rect x="740" y="710" width="220" height="50" fill="rgba(255,255,255,0.15)" rx="6"/>
+  <text x="850" y="725" class="box-desc" text-anchor="middle" style="font-size: 9px;">Convert CSV, Group by</text>
+  <text x="850" y="740" class="box-desc" text-anchor="middle" style="font-size: 9px;">hospital, Sum spend</text>
+
+  <!-- Step 4: Analyze Alignment -->
+  <rect x="1040" y="660" width="260" height="110" rx="10" class="process-box" filter="url(#shadow)"/>
+  <text x="1170" y="690" class="box-title" text-anchor="middle" style="font-size: 13px;">Step 4: Analyze Alignment</text>
+  <rect x="1060" y="710" width="220" height="50" fill="rgba(255,255,255,0.15)" rx="6"/>
+  <text x="1170" y="725" class="box-desc" text-anchor="middle" style="font-size: 9px;">Check contracts, Detect</text>
+  <text x="1170" y="740" class="box-desc" text-anchor="middle" style="font-size: 9px;">violations, Calculate risk</text>
+
+  <!-- Workflow arrows -->
+  <path d="M 340 715 L 400 715" class="arrow-main"/>
+  <path d="M 660 715 L 720 715" class="arrow-main"/>
+  <path d="M 980 715 L 1040 715" class="arrow-main"/>
+
+  <!-- ============ LAYER 4: RISK DETECTION &amp; CLASSIFICATION ============ -->
+  <text x="50" y="820" class="section-label">LAYER 4: RISK DETECTION &amp; CLASSIFICATION</text>
+
+  <!-- Risk Detection Grid -->
+  <rect x="80" y="860" width="1220" height="130" rx="10" class="process-box" filter="url(#shadow)"/>
+  <text x="700" y="885" class="box-title" text-anchor="middle" style="font-size: 14px;">Misalignment Detection Engine</text>
+
+  <rect x="100" y="910" width="280" height="65" fill="rgba(255,255,255,0.1)" rx="6"/>
+  <text x="240" y="928" class="box-desc" text-anchor="middle" style="font-size: 11px; font-weight: 600;">Off-Contract Drugs</text>
+  <text x="240" y="945" class="box-desc" text-anchor="middle" style="font-size: 9px;">Non-approved purchases</text>
+  <text x="240" y="960" class="box-desc" text-anchor="middle" style="font-size: 9px;">Risk: HIGH</text>
+
+  <rect x="420" y="910" width="280" height="65" fill="rgba(255,255,255,0.1)" rx="6"/>
+  <text x="560" y="928" class="box-desc" text-anchor="middle" style="font-size: 11px; font-weight: 600;">Low Spend</text>
+  <text x="560" y="945" class="box-desc" text-anchor="middle" style="font-size: 9px;">Below minimum commitment</text>
+  <text x="560" y="960" class="box-desc" text-anchor="middle" style="font-size: 9px;">Risk: MEDIUM</text>
+
+  <rect x="740" y="910" width="280" height="65" fill="rgba(255,255,255,0.1)" rx="6"/>
+  <text x="880" y="928" class="box-desc" text-anchor="middle" style="font-size: 11px; font-weight: 600;">Price Deviation</text>
+  <text x="880" y="945" class="box-desc" text-anchor="middle" style="font-size: 9px;">Over contract pricing</text>
+  <text x="880" y="960" class="box-desc" text-anchor="middle" style="font-size: 9px;">Risk: MEDIUM</text>
+
+  <rect x="1060" y="910" width="220" height="65" fill="rgba(255,255,255,0.1)" rx="6"/>
+  <text x="1170" y="928" class="box-desc" text-anchor="middle" style="font-size: 11px; font-weight: 600;">Tier Error</text>
+  <text x="1170" y="945" class="box-desc" text-anchor="middle" style="font-size: 9px;">Wrong tier usage</text>
+  <text x="1170" y="960" class="box-desc" text-anchor="middle" style="font-size: 9px;">Risk: MEDIUM</text>
+
+  <!-- Arrow from workflow to risk -->
+  <path d="M 700 770 L 700 860" class="arrow-main"/>
+
+  <!-- ============ LAYER 5: OUTPUT ============ -->
+  <text x="50" y="1050" class="section-label">LAYER 5: AGENT OUTPUTS</text>
+
+  <!-- CSV Output -->
+  <rect x="80" y="1090" width="430" height="160" rx="10" class="output-box" filter="url(#shadow)"/>
+  <text x="295" y="1120" class="box-title" text-anchor="middle" style="font-size: 14px;">CSV Report</text>
+  <text x="295" y="1145" class="box-desc" text-anchor="middle" style="font-size: 10px;">misaligned_hospitals_q[Q]_[YEAR].csv</text>
+  <rect x="100" y="1165" width="390" height="70" fill="rgba(255,255,255,0.15)" rx="6"/>
+  <text x="295" y="1180" class="box-desc" text-anchor="middle" style="font-size: 9px;">Hospital ID | Hospital Name | Quarterly Spend</text>
+  <text x="295" y="1195" class="box-desc" text-anchor="middle" style="font-size: 9px;">Alignment Status | Risk Level | Issues</text>
+  <text x="295" y="1210" class="box-desc" text-anchor="middle" style="font-size: 9px;">Only MISALIGNED hospitals included</text>
+
+  <!-- Text Report -->
+  <rect x="600" y="1090" width="280" height="160" rx="10" class="output-box" filter="url(#shadow)"/>
+  <text x="740" y="1120" class="box-title" text-anchor="middle" style="font-size: 14px;">Text Report</text>
+  <text x="740" y="1145" class="box-desc" text-anchor="middle" style="font-size: 10px;">analysis_report_q[Q]_[YEAR].txt</text>
+  <rect x="620" y="1165" width="240" height="70" fill="rgba(255,255,255,0.15)" rx="6"/>
+  <text x="740" y="1180" class="box-desc" text-anchor="middle" style="font-size: 9px;">Executive Summary</text>
+  <text x="740" y="1195" class="box-desc" text-anchor="middle" style="font-size: 9px;">Risk Breakdown by Level</text>
+  <text x="740" y="1210" class="box-desc" text-anchor="middle" style="font-size: 9px;">Hospital Details</text>
+
+  <!-- System Output -->
+  <rect x="950" y="1090" width="350" height="160" rx="10" class="output-box" filter="url(#shadow)"/>
+  <text x="1125" y="1120" class="box-title" text-anchor="middle" style="font-size: 14px;">System Output</text>
+  <rect x="970" y="1165" width="310" height="70" fill="rgba(255,255,255,0.15)" rx="6"/>
+  <text x="1125" y="1180" class="box-desc" text-anchor="middle" style="font-size: 9px;">Workflow Logs and Metrics</text>
+  <text x="1125" y="1195" class="box-desc" text-anchor="middle" style="font-size: 9px;">Hospital Count, Risk Distribution</text>
+  <text x="1125" y="1210" class="box-desc" text-anchor="middle" style="font-size: 9px;">Execution Time, Error Handling</text>
+
+  <!-- Arrow from risk to outputs -->
+  <path d="M 700 990 L 700 1090" class="arrow-main"/>
+
+  <!-- Data Flow Summary -->
+  <text x="200" y="1330" class="small-text" font-weight="600">Data Flow Summary:</text>
+  <text x="200" y="1355" class="small-text">1. S3 to Bedrock KB: Documents indexed with vector embeddings</text>
+  <text x="200" y="1375" class="small-text">2. Bedrock Runtime: Orchestrates RAG queries to retrieve relevant contracts and POs</text>
+  <text x="200" y="1395" class="small-text">3. LangGraph Workflow: Processes retrieved data through 4-step analysis pipeline</text>
+  <text x="200" y="1415" class="small-text">4. Risk Engine: Detects misalignment patterns and assigns risk levels</text>
+  <text x="200" y="1435" class="small-text">5. Outputs: Generates CSV (for systems) and Text report (for humans)</text>
+  <text x="200" y="1460" class="small-text">Entire workflow handles AWS errors gracefully with mock data fallback</text>
+
+</svg>

@@ -1,0 +1,6 @@
+hospital_id,hospital_name,quarterly_spend,alignment_status,risk_level,issues
+H001,City Medical Center,87500.0,MISALIGNED,HIGH,Off-contract drug purchased: Drug A; Off-contract drug purchased: Drug B; Off-contract drug purchased: Drug C
+H002,Valley Health,62600.0,MISALIGNED,HIGH,Off-contract drug purchased: Drug A; Off-contract drug purchased: Drug X; Off-contract drug purchased: Drug B
+H003,Riverside Hospital,224800.0,MISALIGNED,HIGH,Off-contract drug purchased: Drug A; Off-contract drug purchased: Drug Z; Off-contract drug purchased: Drug B; Off-contract drug purchased: Drug A; Off-contract drug purchased: Drug B; Off-contract drug purchased: Drug C
+H004,Lakeside Clinic,11750.0,MISALIGNED,HIGH,"Off-contract drug purchased: Drug A; Off-contract drug purchased: Drug B; Off-contract drug purchased: Drug C; Quarterly spend ($11,750.00) below minimum ($50,000.00)"
+H005,Mountain View Health,59000.0,MISALIGNED,HIGH,Off-contract drug purchased: Drug A; Off-contract drug purchased: Drug Z; Off-contract drug purchased: Drug B
