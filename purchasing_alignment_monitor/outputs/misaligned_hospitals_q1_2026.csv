@@ -1,6 +1,5 @@
 hospital_id,hospital_name,quarterly_spend,alignment_status,risk_level,issues
-H001,City Medical Center,87500.0,MISALIGNED,HIGH,Off-contract drug purchased: Drug A; Off-contract drug purchased: Drug B; Off-contract drug purchased: Drug C
-H002,Valley Health,62600.0,MISALIGNED,HIGH,Off-contract drug purchased: Drug A; Off-contract drug purchased: Drug X; Off-contract drug purchased: Drug B
-H003,Riverside Hospital,224800.0,MISALIGNED,HIGH,Off-contract drug purchased: Drug A; Off-contract drug purchased: Drug Z; Off-contract drug purchased: Drug B; Off-contract drug purchased: Drug A; Off-contract drug purchased: Drug B; Off-contract drug purchased: Drug C
-H004,Lakeside Clinic,11750.0,MISALIGNED,HIGH,"Off-contract drug purchased: Drug A; Off-contract drug purchased: Drug B; Off-contract drug purchased: Drug C; Quarterly spend ($11,750.00) below minimum ($50,000.00)"
-H005,Mountain View Health,59000.0,MISALIGNED,HIGH,Off-contract drug purchased: Drug A; Off-contract drug purchased: Drug Z; Off-contract drug purchased: Drug B
+H001,City Medical Center,72390.0,MISALIGNED,MEDIUM,"Projected annual spend ($289,560.00) below Tier 1 minimum ($800,000.00)"
+H002,Valley,77420.0,MISALIGNED,MEDIUM,"Off-contract purchase: Unapproved Drug X (NDC: 99999-999-99); Projected annual spend ($309,680.00) below Tier 1 minimum ($800,000.00)"
+H004,Lakeside Clinic,3164.0,MISALIGNED,MEDIUM,"Projected annual spend ($12,656.00) below Tier 1 minimum ($800,000.00)"
+H005,Mountain View,91100.0,MISALIGNED,MEDIUM,"Off-contract purchase: Unapproved Drug Z (NDC: 88888-888-88); Projected annual spend ($364,400.00) below Tier 1 minimum ($800,000.00)"

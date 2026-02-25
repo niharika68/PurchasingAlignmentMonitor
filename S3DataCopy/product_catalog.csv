@@ -1,0 +1,36 @@
+product_type,drug_name,ndc,manufacturer,wac_price,contract_price,onestop_eligible
+Branded Rx,Lipitor,00071-0155-23,Pfizer,12.50,11.25,N
+Branded Rx,Crestor,00310-0755-90,AstraZeneca,14.80,13.32,N
+Branded Rx,Nexium,00186-5020-31,AstraZeneca,18.20,16.38,N
+Branded Rx,Advair,00173-0695-00,GlaxoSmithKline,45.00,40.50,N
+Branded Rx,Humira,00074-4339-02,AbbVie,125.00,112.50,N
+Branded Rx,Enbrel,58406-0425-01,Amgen,98.00,88.20,N
+Branded Rx,Remicade,57894-0030-01,Janssen,220.00,198.00,N
+Branded Rx,Lantus,00088-2220-33,Sanofi,38.50,34.65,N
+Branded Rx,Januvia,00006-0277-31,Merck,15.20,13.68,N
+Branded Rx,Lyrica,00071-1014-68,Pfizer,22.40,20.16,N
+Generic,Lisinopril,00093-1040-01,Teva,0.85,0.68,Y
+Generic,Metformin,00093-1048-01,Teva,0.45,0.36,Y
+Generic,Amlodipine,00093-3171-01,Teva,0.92,0.74,Y
+Generic,Omeprazole,00093-5286-01,Teva,1.20,0.96,Y
+Generic,Simvastatin,00093-7153-01,Teva,0.78,0.62,Y
+Generic,Metoprolol,00093-0733-01,Teva,0.65,0.52,Y
+Generic,Losartan,00093-7365-01,Teva,1.10,0.88,Y
+Generic,Gabapentin,00093-0637-01,Teva,0.95,0.76,Y
+Generic,Hydrochlorothiazide,00093-0346-01,Teva,0.35,0.28,Y
+Generic,Levothyroxine,00093-0148-01,Teva,0.55,0.44,Y
+Generic,Atorvastatin,00093-5057-01,Teva,1.85,1.48,Y
+Generic,Sertraline,00093-0041-01,Teva,0.72,0.58,Y
+Generic,Fluoxetine,00093-7198-01,Teva,0.68,0.54,Y
+Generic,Pantoprazole,00093-5123-01,Teva,1.45,1.16,Y
+Generic,Escitalopram,00093-5851-01,Teva,1.25,1.00,Y
+OneStop,Amoxicillin,65862-0015-01,Aurobindo,0.42,0.34,Y
+OneStop,Azithromycin,65862-0024-01,Aurobindo,1.85,1.48,Y
+OneStop,Ciprofloxacin,65862-0537-01,Aurobindo,0.95,0.76,Y
+OneStop,Prednisone,65862-0096-01,Aurobindo,0.28,0.22,Y
+OneStop,Ibuprofen,65862-0012-01,Aurobindo,0.18,0.14,Y
+OneStop,Acetaminophen,65862-0010-01,Aurobindo,0.12,0.10,Y
+OneStop,Naproxen,65862-0445-01,Aurobindo,0.38,0.30,Y
+OneStop,Cephalexin,65862-0036-01,Aurobindo,0.65,0.52,Y
+OneStop,Doxycycline,65862-0117-01,Aurobindo,0.88,0.70,Y
+OneStop,Metronidazole,65862-0187-01,Aurobindo,0.55,0.44,Y

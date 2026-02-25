@@ -17,11 +17,13 @@ langchain-aws = "^0.1.0"
 pandas = "^2.1.0"
 python-dotenv = "^1.0.0"
 requests = "^2.31.0"
+matplotlib = "^3.10.8"
 
 [tool.poetry.group.dev.dependencies]
 pytest = "^7.4.0"
 black = "^23.12.0"
 ruff = "^0.1.0"
+pytest-mock = "^3.15.1"
 
 [build-system]
 requires = ["poetry-core"]
