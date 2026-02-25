@@ -20,3 +20,6 @@ env/
 
 # OS
 .DS_Store
+
+# Test outputs (generated during test runs)
+tests/test_outputs/

@@ -20,6 +20,13 @@ class BedrockConfig:
         self.aws_secret_access_key = os.getenv("AWS_SECRET_ACCESS_KEY")
         self.knowledge_base_id = os.getenv("KNOWLEDGE_BASE_ID")
         self.model_arn = os.getenv("MODEL_ARN")
+    
+    @property
+    def model_id(self) -> str:
+        """Extract model ID from MODEL_ARN for use with invoke_model."""
+        if self.model_arn and "/" in self.model_arn:
+            return self.model_arn.split("/")[-1]
+        return self.model_arn or "amazon.nova-pro-v1:0"
         
     def get_bedrock_agent_runtime(self):
         """Create and return Bedrock Agent Runtime client."""

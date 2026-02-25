@@ -2,64 +2,30 @@
 PURCHASING ALIGNMENT MONITOR - ANALYSIS REPORT
 ================================================================================
 
-Report Generated: 2026-02-16 12:32:39 UTC
+Report Generated: 2026-02-25 00:19:51 UTC
 
 SUMMARY
 --------------------------------------------------------------------------------
 Total Hospitals Analyzed: 5
-Misaligned Hospitals: 5
-Alignment Rate: 0.0%
+Misaligned Hospitals: 4
+Alignment Rate: 20.0%
 
 MISALIGNED HOSPITALS (HIGH RISK)
 --------------------------------------------------------------------------------
 
-🔴 City Medical Center (ID: H001)
-   Risk Level: HIGH
-   Quarterly Spend: $87,500.00
-   Status: MISALIGNED
-   Issues:
-     • Off-contract drug purchased: Drug A
-     • Off-contract drug purchased: Drug B
-     • Off-contract drug purchased: Drug C
-
-🔴 Valley Health (ID: H002)
-   Risk Level: HIGH
-   Quarterly Spend: $62,600.00
-   Status: MISALIGNED
-   Issues:
-     • Off-contract drug purchased: Drug A
-     • Off-contract drug purchased: Drug X
-     • Off-contract drug purchased: Drug B
-
-🔴 Riverside Hospital (ID: H003)
-   Risk Level: HIGH
-   Quarterly Spend: $224,800.00
-   Status: MISALIGNED
-   Issues:
-     • Off-contract drug purchased: Drug A
-     • Off-contract drug purchased: Drug Z
-     • Off-contract drug purchased: Drug B
-     • Off-contract drug purchased: Drug A
-     • Off-contract drug purchased: Drug B
-     • Off-contract drug purchased: Drug C
-
-🔴 Lakeside Clinic (ID: H004)
-   Risk Level: HIGH
-   Quarterly Spend: $11,750.00
-   Status: MISALIGNED
-   Issues:
-     • Off-contract drug purchased: Drug A
-     • Off-contract drug purchased: Drug B
-     • Off-contract drug purchased: Drug C
-     • Quarterly spend ($11,750.00) below minimum ($50,000.00)
-
-🔴 Mountain View Health (ID: H005)
-   Risk Level: HIGH
-   Quarterly Spend: $59,000.00
-   Status: MISALIGNED
-   Issues:
-     • Off-contract drug purchased: Drug A
-     • Off-contract drug purchased: Drug Z
-     • Off-contract drug purchased: Drug B
+MEDIUM RISK HOSPITALS
+--------------------------------------------------------------------------------
+🟡 City Medical Center (ID: H001)
+   Risk Level: MEDIUM
+   Issues: Projected annual spend ($289,560.00) below Tier 1 minimum ($800,000.00)
+🟡 Valley (ID: H002)
+   Risk Level: MEDIUM
+   Issues: Off-contract purchase: Unapproved Drug X (NDC: 99999-999-99); Projected annual spend ($309,680.00) below Tier 1 minimum ($800,000.00)
+🟡 Lakeside Clinic (ID: H004)
+   Risk Level: MEDIUM
+   Issues: Projected annual spend ($12,656.00) below Tier 1 minimum ($800,000.00)
+🟡 Mountain View (ID: H005)
+   Risk Level: MEDIUM
+   Issues: Off-contract purchase: Unapproved Drug Z (NDC: 88888-888-88); Projected annual spend ($364,400.00) below Tier 1 minimum ($800,000.00)
 
 ================================================================================
